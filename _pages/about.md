@@ -2,25 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: Postdoctoral Fellow
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    liam@ece.ubc.ca
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false
+latest_posts: false
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am a postdoctoral fellow at the University of British Columbia supervised by Christos Thrampoulidis in the Department of Electrical and Computer Engineering and by Mark Schmidt in the
+Department of Computer Science. I received my BS from California Polytechnic State University in 2017 with a double major in Mechanical Engineering and Mathematics. I received my MS from the Department of Applied Mathematics at the University of Colorado Boulder in 2020 and my
+PhD in 2022, advised by Emiliano Dall’Anese and Stephen Becker. I enjoy walking in the woods, composing poems, and dancing with friends.
