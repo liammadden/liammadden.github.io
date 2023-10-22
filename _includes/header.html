@@ -42,6 +42,11 @@
                   {% assign about_title = page.title %}
                 {% endif %}
               {% endfor %}
+              {%- for page in site.pages -%}
+                {% if page.permalink == '/cv' %}
+                  {% assign cv_title = page.title %}
+                {% endif %}
+              {% endfor %}
 
               <!-- About -->
               <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
@@ -63,12 +68,11 @@
               {%- endif %}
 
               <!-- Other pages -->
-              {%- assign sorted_pages = site.pages | sort: "nav_order" -%}
-              {%- for p in sorted_pages -%}
+              {%- for p in site.pages -%}
               {%- if p.nav and p.autogen == nil -%}
               {%- if p.cv %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
-                <a class="nav-link" href="/assets/pdf/CV.pdf" target="_blank">{{ p.title }}</a>
+                <a class="nav-link" href="/assets/pdf/CV.pdf" target="_blank">CV</a>
               </li>
               {%- else %}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
@@ -80,7 +84,6 @@
               </li>
               {%- endif -%}
               {%- endif -%}
-              {% endfor -%}
               {%- if site.enable_darkmode %}
 
               <!-- Toogle theme mode -->
