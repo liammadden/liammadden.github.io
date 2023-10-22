@@ -83,7 +83,8 @@
                   {% endfor %}
                 </div>
               </li>
-              {%- elif p.cv -%}
+              {%- else %}
+              {%- if p.cv -%}
               <li class="nav-item {% if page.title == p.title %}active{% endif %}">
                 <a class="nav-link" href="/assets/pdf/CV.pdf" target="_blank">{{ p.title }}</a>
               </li>
@@ -95,6 +96,7 @@
                   {%- endif -%}
                 </a>
               </li>
+              {%- endif -%}
               {%- endif -%}
               {%- endif -%}
               {% endfor -%}
